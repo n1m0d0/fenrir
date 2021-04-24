@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Subcategory;
 use Illuminate\Http\Request;
 
-class ApiSubSubcategoryController extends Controller
+class ApiSubcategoryController extends Controller
 {
     public function index()
     {

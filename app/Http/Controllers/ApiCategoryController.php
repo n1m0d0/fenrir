@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use App\Models\Category;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
+
 
 class ApiCategoryController extends Controller
 {
@@ -34,7 +36,7 @@ class ApiCategoryController extends Controller
             return response()->json([
                 'error' => 'data not found'
             ], 404);
-        }  
+        }
     }
 
     public function update(Request $request, $id)
